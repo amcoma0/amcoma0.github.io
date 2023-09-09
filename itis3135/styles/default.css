@@ -43,3 +43,25 @@ img {
 figure {
     text-align: center;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.total {
+    text-align: right;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(68, 53, 13);
+}
+
+th, td {
+    padding: 5px;
+}
