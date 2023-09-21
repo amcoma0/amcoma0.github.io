@@ -106,3 +106,7 @@ input[type="reset"] {
     background-color: rgb(68, 53, 13);
     color:#d7a163;
 }
+
+a:active {
+    color: gray;
+}
