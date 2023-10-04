@@ -10,8 +10,8 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.divider {
-    border-bottom: 5px solid gray;
+hr {
+    border: 3px solid gray;
 }
 
 nav {
@@ -38,17 +38,16 @@ figure {
 }
 
 figcaption {
+    text-align: center;
+}
 
+.validator {
+    display: inline;
 }
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .total {
