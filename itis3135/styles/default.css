@@ -1,6 +1,6 @@
 body {
     background-color : #d7a163;
-    color: rgb(197, 78, 31);
+    color: #3E5C76;
     font: Arial;
     font-family: sans-serif;
 }
@@ -14,24 +14,12 @@ h1, h2, h3 {
     border-bottom: 5px solid gray;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-#content-wrap {
-    padding-bottom: 2.5rem;
-}
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
+nav {
+    text-align: center;
 }
 
 a {
-    color: #6399d7;
+    color: #1D2D44;
     text-decoration: none;
 }
 
@@ -47,6 +35,10 @@ img {
 
 figure {
     text-align: center;
+}
+
+figcaption {
+
 }
 
 table, th, td {
