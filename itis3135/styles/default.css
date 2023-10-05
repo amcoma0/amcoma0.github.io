@@ -39,6 +39,7 @@ figure {
 
 figcaption {
     text-align: center;
+    font-style: italic;
 }
 
 .validator {
@@ -105,4 +106,9 @@ input[type="reset"] {
 
 a:active {
     color: gray;
+}
+
+.functionDivider {
+    /* border: solid gray; */
+    max-width: 300px;
 }
