@@ -109,6 +109,55 @@ a:active {
 }
 
 .functionDivider {
-    /* border: solid gray; */
     max-width: 300px;
+}
+
+/*Small devices (landscape phones, 576 pixels and up) */
+@media (min-width: 576px)
+{   
+    form {
+        width: 60vw;
+        max-width: 500px;
+        min-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+
+    label {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    label {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: block;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 1em auto;
+        height: 2em;
+        min-width: 300px;
+        background-color: rgb(68, 53, 13);
+        color:#d7a163;
+    }
+
+    input[type="reset"] {
+        display: block;
+        margin: 1em auto;
+        height: 2em;
+        min-width: 300px;
+        background-color: rgb(68, 53, 13);
+        color:#d7a163;
+    }
 }

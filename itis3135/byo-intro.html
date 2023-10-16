@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset = "UTF-8">
+        <title>Alex McComas's Admirable Manatee &mdash; ITIS 3135 &mdash; BYO Intro</title>
+        <link href = "./styles/default.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <main id = "main">
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+            <form onsubmit = "submitForm()">
+                <label>Name: </label><textarea id = "name"></textarea>
+                <label>Mascot: </label><textarea id = "mascot"></textarea>
+                <label>Image: </label><input id = "image" type = "file">
+                <label>Image Caption: <input id = "image-caption" type = "text"></label>
+                <label>Personal Background: </label><textarea id = "personal-background"></textarea>
+                <label>Professional Background: </label><textarea id = "professional-background"></textarea>
+                <label>Academic Background: </label><textarea id = "academic-background"></textarea>
+                <label>Background in Web Development: </label><textarea id = "web-dev-background"></textarea>
+                <label>Primary Computer Platform: </label><textarea id = "computer-platform"></textarea>
+                <label id = "course-list">Courses Currently Taking: </label>
+                    <input id = "addCourse" type = "button" onclick = "addCourse()" value = "Add Course">
+                <label>Funny Thing? </label><textarea id = "funny"></textarea>
+                <label>Anything Else? </label><textarea id = "extra-content"></textarea>
+                <label>"I understand that what is on this page is not password protected and I will not put anything here that I dont want publicly available." <input type = "checkbox"/></label>
+                <input id = "submit" type = "submit" value = "Submit"/>
+                <input id = "reset" type = "reset" value = "Reset" onclick = "resetForm()"/>
+            </form>
+        </main>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/survey.js"></script>
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>
