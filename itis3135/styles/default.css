@@ -112,6 +112,19 @@ a:active {
     max-width: 300px;
 }
 
+.button-holder {
+    border: 1px solid black;
+    margin: auto;
+    height: 300px;
+    width: 150px;
+}
+
+.button-holder input[type="button"] {
+    background-color: gray;
+}
+
+
+
 /*Small devices (landscape phones, 576 pixels and up) */
 @media (min-width: 576px)
 {   

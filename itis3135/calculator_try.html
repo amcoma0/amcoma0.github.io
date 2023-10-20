@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <meta charset = "UTF-8">
+        <title>Alex McComas's Admirable Manatee &mdash; ITIS 3135 &mdash; </title>
+        <link href = "./styles/default.css" rel = "stylesheet">
+    </main>
+    <body>
+        <div data-include="components/header.html"></div>
+        <main>
+            <!--Getting stuck on how to get these buttons formatted correctly and also how to actually make 
+                a functional calculator-->
+            
+            <div class = button-holder>
+                <div class = "display">
+                <fieldset id = "display"></fieldset>
+                </div>
+                <input id = "add" type = "button" value = "+">
+                <input id = "subtract" type = "button" value = "-">
+                <input id = "divide" type = "button" value = "/">
+                <input id = "multiply" type = "button" value = "X">
+                <input id = "numbers" type = button value = "0" onclick = "showNum(0)">
+                <input id = "numbers" type = button value = "1" onclick = "showNum(1)">
+                <input id = "numbers" type = button value = "2" onclick = "showNum(2)">
+                <input id = "numbers" type = button value = "3" onclick = "showNum(3)">
+                <input id = "numbers" type = button value = "4" onclick = "showNum(4)">
+                <input id = "numbers" type = button value = "5" onclick = "showNum(5)">
+                <input id = "numbers" type = button value = "6" onclick = "showNum(6)">
+                <input id = "numbers" type = button value = "7" onclick = "showNum(7)">
+                <input id = "numbers" type = button value = "8" onclick = "showNum(8)">
+                <input id = "numbers" type = button value = "9" onclick = "showNum(9)">
+                <input id = "calculate" type = "button" value = "=">
+            </div>
+        </main>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/calculator_try.js"></script>
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>

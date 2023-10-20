@@ -75,6 +75,7 @@ function addCourse()
 function createListItem(nameOfItem, descriptionOfItem)
 {
     let li = document.createElement("li");
+    
 }
 
 function submitForm()
