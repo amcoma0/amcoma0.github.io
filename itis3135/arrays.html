@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <title>Alex McComas's Admirable Manatee &mdash; ITIS 3135 &mdash; Arrays</title>
+        <link rel = "stylesheet" href = "styles/default.css">
     </head>
     <body>
         <div data-include="components/header.html"></div>
-        <main>
-            <button id = "add-salary"></button>
-            <button id = "display-results"></button>
-            <button id = "display-salary"></button>
+        <main id = "main">
+            <label>Update Employees Salaries: 
+                <select id = "employee-list">
+                    <option value = "">(select one)</option>
+                    <option value = "1">Collin Rolland</option>
+                    <option value = "2">Sufian Azfar</option>
+                    <option value = "3">Christopher White</option>
+                    <option value = "4">Joel Clarke</option>
+                    <option value = "5">Christian Palardy</option>
+                    <option value = "6">Zach Perkins</option>
+                    <option value = "7">Aaryanna Henry</option>
+                </select>
+                <button id = "change-salaries">Change Salary</button>
+            </label>
+            <section>
+                <label>Name: <input id = "name" type = "text"></label>
+                <label>Salary: <input id = "salary" type = "number"></label>
+                <button id = "add-salary">Add Salary</button>
+            </section>
+            <section>
+                <button id = "display-results">Display Results</button>
+            </section>
+            <button id = "display-salary">Display Salary</button>
         </main>
         <div data-include = "components/footer.html"></div>
         <script src = "scripts/arrays.js"></script>
