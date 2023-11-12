@@ -8,15 +8,117 @@
     <body>
         <header>
             <nav>
-                <a>Home</a> ||
-                <a>Variables</a> ||
-                <a>Conditionals</a> ||
-                <a>Loops</a> ||
-                <a>Functions</a>
+                <a href = "index.html">Home</a> ||
+                <a href = "variables.html">Variables</a> ||
+                <a href = "conditionals.html">Conditionals</a> ||
+                <a href = "loops.html">Loops</a> ||
+                <a href = "functions.html">Functions</a>
             </nav>
         </header>
         <main>
             <h2>Variables</h2>
+            <p>
+                In all programming languages, “variables” are containers that are used to store data for a program. 
+                A variable could be used to store how many of a particular item is in stock on an online store. 
+                Variables can also be used to store the name of that item, or how much that item costs. 
+                There are five main types of variables in Java:
+            </p>
+            <table>
+                <tr>
+                    <th>Variable Type</th>
+                    <th>What is it?</th>
+                    <th>Examples</th>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>
+                        The int variable type is used to store integers. 
+                        An int can be any whole number, whether positive or negative.
+                    </td>
+                    <td>
+                        4
+                        -73
+                        56843
+                        -800
+                        0
+                    </td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>The float variable type stores floating point numbers (aka decimal numbers).</td>
+                    <td>
+                        3.1415
+                        7.00
+                        364.892
+                        2.5
+                        0.1
+                    </td>
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>
+                        The char type stores a single character. 
+                        It can be a letter, a number, or any other symbol.
+                    </td>
+                    <td>
+                        a
+                        G
+                        6
+                        %
+                        $
+                    </td>
+                </tr>
+                <tr>
+                    <td>string</td>
+                    <td>
+                        The String variable types hold text (or a “string” of characters). 
+                        It can be used to store words or sentences
+                    </td>
+                    <td>
+                        “Hello World!”
+                        “How are you?”
+                        “Items left: 75”
+                        “John Doe”
+                        “Green”
+                    </td>
+                </tr>
+                <tr>
+                    <td>boolean</td>
+                    <td>The boolean variable type can only hold two values: true or false.</td>
+                    <td>
+                        true
+                        false
+                    </td>
+                </tr>
+            </table>
+            <p>The most common way to make, or instantiate, a variable in Java is as follows:</p>
+            <div class = "code-block">
+                <p>variableType variableName = value;</p>
+            </div>
+            <p>
+                In the above code, “variableType” should be the type of variable we want (int, String, etc.). 
+                Next, “variableName” is whatever we want the name of the variable to be. 
+                This is what we’ll use in the future to refer to whatever data is stored in that variable. 
+                Finally, “value” is what is actually held by the variable; the data itself.
+            </p>
+            <p>Here are a few examples of declaring actual variables in Java:</p>
+            <div class = "code-block">
+                <p>String greeting = “Hello there!”;</p>
+                <p>int livesLeft = 5;</p>
+                <p>boolean isGameOver = true;</p>
+            </div>
+            <div class = "note">
+                <p>
+                    Note! The end of a line of code in Java is virtually always indicated by a semicolon (;), 
+                    don’t forget that!
+                </p>
+            </div>
+            <p>You can even use variables to declare other variables.</p>
+            <div class = "code-block">
+                <p>int myApples = 3;</p>
+                <p>int yourApples = 7;</p>
+                <p>int totalApples = myApples + yourApples;</p>
+            </div>
         </main>
         <footer>
 

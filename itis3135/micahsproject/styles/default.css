@@ -1,0 +1,12 @@
+body {
+    background-color: gray;
+}
+
+div.code-block {
+    border: 5px solid rgb(20, 164, 226)
+    
+}
+
+div.note {
+    border: 5px solid yellow;
+}
