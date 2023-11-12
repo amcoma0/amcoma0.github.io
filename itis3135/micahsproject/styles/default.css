@@ -1,12 +1,37 @@
 body {
     background-color: gray;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav, h1, h2 {
+    text-align: center;
+}
+
+nav {
+    border: 2px solid purple;
+    border-radius: 5px;
 }
 
 div.code-block {
-    border: 5px solid rgb(20, 164, 226)
-    
+    border: 5px solid rgb(20, 164, 226);
 }
 
 div.note {
     border: 5px solid yellow;
+    
+}
+
+div.output {
+    border: 5px solid darkblue;
+}
+
+table, tr, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
 }
