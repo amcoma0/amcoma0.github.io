@@ -1,7 +1,17 @@
 body {
-    background-color: gray;
+    background-color: #143A26;
     margin-left: 100px;
     margin-right: 100px;
+    font-family:"Hind", monospace;
+    color: #d8f9ea;
+}
+
+hr {
+    border: 2px solid #231942;
+}
+
+h1, h2 {
+    font-family: "Nunito Sans 800";
 }
 
 nav, h1, h2 {
@@ -14,24 +24,32 @@ nav {
 }
 
 div.code-block {
-    border: 5px solid rgb(20, 164, 226);
+    border: 5px solid #231942;
 }
 
 div.note {
-    border: 5px solid yellow;
+    border: 5px solid #231942;
     
 }
 
 div.output {
-    border: 5px solid darkblue;
+    border: 5px solid #231942;
 }
 
 table, tr, th, td {
-    border: 2px solid black;
+    border: 2px solid #231942;
     border-collapse: collapse;
 }
 
 a {
     text-decoration: none;
     color: purple;
+}
+
+div.code-clock, div.note, div.output {
+    box-sizing: border-box;
+}
+
+div.code-block, div.output {
+    border-radius: 10px;
 }
