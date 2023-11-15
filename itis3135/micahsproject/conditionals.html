@@ -6,21 +6,56 @@
         <link href = "styles/default.css" rel = "stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Decaf</h1>
-            <nav>
-                <a href = "index.html">Home</a> ||
-                <a href = "variables.html">Variables</a> ||
-                <a href = "conditionals.html">Conditionals</a> ||
-                <a href = "loops.html">Loops</a> ||
-                <a href = "functions.html">Functions</a>
-            </nav>
-        </header>
+        <div data-include = "components/header.html"></div>
         <main>
-            <h2>Conditionals</h2>
+            <h2>Operators & Conditionals</h2>
+            <p>When comparing variables mathematically, Java supports the following operators.</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Syntax</th>
+                    <th>Result if a = 1 & b = 2</th>
+                    <th>Result if a = 1 & b = 1</th>
+                </tr>
+                <tr>
+                    <td>Greater than</td>
+                    <td>a > b</td>
+                    <td>false</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>Less than</td>
+                    <td>a < b</td>
+                    <td>true</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>Greater than or equal to</td>
+                    <td>a >= b</td>
+                    <td>false</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Less than or equal to</td>
+                    <td>a <= b</td>
+                    <td>true</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>Equal to</td>
+                    <td>a == b</td>
+                    <td>false</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Not equal to</td>
+                    <td>a != b</td>
+                    <td>true</td>
+                    <td>false</td>
+                </tr>
+            </table>
         </main>
-        <footer>
-
-        </footer>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/include.js"></script>
     </body>
 </html>

@@ -19,8 +19,11 @@ nav, h1, h2 {
 }
 
 nav {
-    border: 2px solid purple;
+    border: 2px solid #E7C8DD;
     border-radius: 5px;
+    width: 550px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 div.code-block {
@@ -37,13 +40,13 @@ div.output {
 }
 
 table, tr, th, td {
-    border: 2px solid #231942;
+    border: 5px solid #231942;
     border-collapse: collapse;
 }
 
 a {
     text-decoration: none;
-    color: purple;
+    color: #E7C8DD;
 }
 
 div.code-clock, div.note, div.output {

@@ -6,16 +6,7 @@
         <link href = "styles/default.css" rel = "stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Decaf</h1>
-            <nav>
-                <a href = "index.html">Home</a> ||
-                <a href = "variables.html">Variables</a> ||
-                <a href = "conditionals.html">Conditionals</a> ||
-                <a href = "loops.html">Loops</a> ||
-                <a href = "functions.html">Functions</a>
-            </nav>
-        </header>
+        <div data-include = "components/header.html"></div>
         <main>
             <h2>Variables</h2>
             <p>
@@ -37,22 +28,22 @@
                         An int can be any whole number, whether positive or negative.
                     </td>
                     <td>
-                        4
-                        -73
-                        56843
-                        -800
-                        0
+                        4, 
+                        -73, 
+                        56843, 
+                        -800, 
+                        0, 
                     </td>
                 </tr>
                 <tr>
                     <td>float</td>
                     <td>The float variable type stores floating point numbers (aka decimal numbers).</td>
                     <td>
-                        3.1415
-                        7.00
-                        364.892
-                        2.5
-                        0.1
+                        3.1415, 
+                        7.00, 
+                        364.892, 
+                        2.5, 
+                        0.1, 
                     </td>
                 </tr>
                 <tr>
@@ -62,11 +53,11 @@
                         It can be a letter, a number, or any other symbol.
                     </td>
                     <td>
-                        a
-                        G
-                        6
-                        %
-                        $
+                        a, 
+                        G, 
+                        6, 
+                        %, 
+                        $, 
                     </td>
                 </tr>
                 <tr>
@@ -76,10 +67,10 @@
                         It can be used to store words or sentences
                     </td>
                     <td>
-                        “Hello World!”
-                        “How are you?”
-                        “Items left: 75”
-                        “John Doe”
+                        “Hello World!”, 
+                        “How are you?”, 
+                        “Items left: 75”, 
+                        “John Doe”, 
                         “Green”
                     </td>
                 </tr>
@@ -87,7 +78,7 @@
                     <td>boolean</td>
                     <td>The boolean variable type can only hold two values: true or false.</td>
                     <td>
-                        true
+                        true, 
                         false
                     </td>
                 </tr>
@@ -146,8 +137,7 @@
                 So the console prints “There are “, then the value of “totalApples” (10), finally followed by “ apples in all.”
             </p>
         </main>
-        <footer>
-
-        </footer>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/include.js"></script>
     </body>
 </html>
