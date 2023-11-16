@@ -54,6 +54,56 @@
                     <td>false</td>
                 </tr>
             </table>
+            <p>
+                Up until now, boolean values haven’t really seemed to have any important use. 
+                However, when combined with the power of conditionals, that changes.
+            </p>
+            <h2>If Statements</h2>
+            <p>
+                In Java, if statements can be used to decide whether or not to execute a portion of code. 
+                The syntax for if statements is as follows:
+            </p>
+            <div class = "code-block">
+                <p>if(conditonal)</p>
+                <p>{</p>
+                    <p>&emsp; (code to be executed)</p>
+                <p>}</p>
+            </div>
+            <p>
+                Let’s take a very simple example. Say you want to divide two int variables, “a” and “b”. 
+                However, if the second of the int variables is a 0, division will be impossible. 
+                We can use if statements to check to see if that variable is, in fact, 0.
+            </p>
+            <div class = "code-block">
+                <p>if (b > 0)</p>
+                <p>{</p>
+                <p>&emsp; System.out.println(“Result: ” + a / b);</p>
+                <p>}</p>
+            </div>
+            <p>If “a” was assigned a value of 8, and “b” was assigned a value of 4, the output would be:</p>
+            <div class = "output">
+                <p>Result: 4</p>
+            </div>
+            <p>
+                However, if “b” was 0, no matter what “a” was, nothing would be printed. 
+                This might be a bit confusing for anyone using our program to try and divide numbers. 
+                We can clear up that confusion by using an else statement.
+            </p>
+            <p>
+                Else statements can be attached to the end of if statements, and will run if the corresponding 
+                if statement returns false. 
+                In our example, we could print an error message to the console with an else statement like this:
+            </p>
+            <div class = "code-block">
+                <p>if (b > 0)</p>
+                <p>{</p>
+                <p>&emsp; System.out.println(“Result: ” + a / b);</p>
+                <p>}</p>
+                <p>else</p>
+                <p>{</p>
+                <p>&emsp; System.out.println(“Error! You can’t divide by zero!”);</p>
+                <p>}</p>
+            </div>
         </main>
         <div data-include = "components/footer.html"></div>
         <script src = "scripts/include.js"></script>
