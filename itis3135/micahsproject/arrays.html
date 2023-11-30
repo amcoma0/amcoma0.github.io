@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title></title>
+        <link href = "styles/default.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div data-include = "components/header.html"></div>
+        <main>
+            <h2>Arrays</h2>
+            <p>There is another data type that was not covered in the Variables page, and that is an array. 
+                Arrays are used to essentially hold a list of other data types. 
+                For example, let’s say you need to store the first names of 10 employees. 
+                What you might think of doing is declaring 10 separate String variables 
+                and assigning one of the names to each of them. 
+                However, arrays make that much simpler. You can declare arrays as follows:
+            </p>
+            <div class = "code-block">
+                <p>variableType[X] arrayName;</p>
+            </div>
+            <p>
+                In this statement, “X” would be replaced with the length of the array. 
+                An array’s length determines how many items it can store inside of it. 
+                So, to create an array called “employeeNames” to store 10 names, 
+                we would use the above statement followed by a comma separated list of each item 
+                we want to put inside the array, surrounded by curly braces: 
+            </p>
+            <div class = "code-block">
+                <p>String[10] employeeNames = {"Dwight", "Jim", "Pam", "Michael", "Kevin", "Andy", "Phyllis", "Stanley", "Oscar", "Angela"};</p>
+            </div>
+            <p>
+                In order to actually access the values within an array, 
+                we use the array name immediately followed by the index of our desired value in square brackets. 
+                Now, one very important thing to remember about arrays in programming is that the index of an array 
+                does NOT start at 1, but at 0. What does this mean? Well, in the code below, 
+                try and take a guess as to what value the String variable “myName” will be assigned.
+            </p>
+            <div class = "code-block">
+                <p>String myName = employeeNames[1];</p>
+            </div>
+            <button>Jim</button>
+            <button>Dwight</button>
+            <p>
+                You can even use variables to specify array indexes. 
+                Interact with the code below to see how it affects the output, 
+                assuming the “employeeNames” array is the same as declared above.
+            </p>
+            <div class = "code-block">
+                <p>int index = (User can choose from 0-9);</p>
+                <p>System.out.println(employeeNames[index] + "will be given a raise!");</p>
+            </div>
+        </main>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>

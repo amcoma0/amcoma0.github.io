@@ -104,6 +104,74 @@
                 <p>&emsp; System.out.println(“Error! You can’t divide by zero!”);</p>
                 <p>}</p>
             </div>
+            <p>
+                Let’s take another example. Say we need to figure out whether an integer “a” is between 1 and 10. 
+                We could put an if statement inside another, with the first one checking to see if the integer is greater than 1,
+                and the second checking to see if the integer is less than 10 (or vice versa). 
+                This solution would look something like this:
+            </p>
+            <div class = "code-block">
+                <p>if (a > 1)</p>
+                <p>{</p>
+                <p>&emsp; if (a < 10)</p>
+                <p>&emsp; {</p>
+                <p>&emsp; &emsp; System.out.println("a is between 1 and 10");</p>
+                <p>&emsp; }</p>
+                <p>}</p>
+                <p>else</p>
+                <p>{</p>
+                <p>&emsp; System.out.println("a is not between 1 and 10");</p>
+                <p>}</p>
+            </div>
+            <p>
+                There is, however, a more efficient method to do this. We can optimize this code by using logical operators. 
+                Logical operators can be used to extract a single boolean value (which if you remember, means either true or false) 
+                from multiple comparison statements.
+            </p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Syntax</th>
+                    <th>Result if a = false & b = false</th>
+                    <th>Result if a = true & b = false</th>
+                    <th>Result if a = true & b = true</th>
+                </tr>
+                <tr>
+                    <td>AND</td>
+                    <td>a && b</td>
+                    <td>false</td>
+                    <td>false</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>OR</td>
+                    <td>a || b</td>
+                    <td>false</td>
+                    <td>true</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>NOT</td>
+                    <td>!(a && b)</td>
+                    <td>true</td>
+                    <td>true</td>
+                    <td>false</td>
+                </tr>
+            </table>
+            <p>
+                We can combine these logical operators with the comparison 
+                operators to make this code more efficient:
+            </p>
+            <div class = "code-block">
+                <p>if (a > 1 && a < 10)</p>
+                <p>{</p>
+                <p>&emsp; System.out.println("a is between 1 and 10");</p>
+                <p>}</p>
+                <p>else</p>
+                <p>{</p>
+                <p>&emsp; System.out.println("a is not between 1 and 10");</p>
+                <p>}</p>
+            </div>
         </main>
         <div data-include = "components/footer.html"></div>
         <script src = "scripts/include.js"></script>
