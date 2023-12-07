@@ -39,19 +39,34 @@
             <div class = "code-block">
                 <p>String myName = employeeNames[1];</p>
             </div>
-            <button>Jim</button>
-            <button>Dwight</button>
+            <button onclick = "jim_button()">Jim</button>
+            <button onclick = "dwight_button()">Dwight</button>
+            <p id = "display-answer"></p>
             <p>
                 You can even use variables to specify array indexes. 
                 Interact with the code below to see how it affects the output, 
                 assuming the “employeeNames” array is the same as declared above.
             </p>
             <div class = "code-block">
-                <p>int index = (User can choose from 0-9);</p>
+                <p>int index = <select name = "arrays-example" id = "arrays-example">
+                    <option value = "0">0</option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                </select>;</p>
                 <p>System.out.println(employeeNames[index] + "will be given a raise!");</p>
+                <button onclick = "user_array()">Run</button>
             </div>
+            <p id = "print-text"></p>
         </main>
         <div data-include = "components/footer.html"></div>
         <script src = "scripts/include.js"></script>
+        <script src = "scripts/arrays.js"></script>
     </body>
 </html>
